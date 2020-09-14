@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 7</title>
+    <style>
+        .opa1
+        {
+            background-color: blue;
+
+            opacity: 0.5;
+
+        }
+        .opa2
+        {
+            background-color: blue;
+            opacity: 0.7;
+
+        }
+        .opa3{
+            background-color: blue;
+            opacity: 0.9;
+        }
+        .f1{
+            float: left;
+        }
+        
+        .f2{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+        figcaption{
+            text-align: center;
+            font-weight: bold;
+
+        }
+        .transition{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+        }
+        .transition:hover{
+            height: 400px;
+            width: 400;
+        }
+        .animation{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50px;
+            animation-name: Binh;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-play-state: running;
+            position: relative;
+        }
+        @keyframes Binh {
+            from {left:0px; background-color: red;}
+            to {left: 400px; background-color: blue;}
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Opcity</h2>
+    <div class="opa1">Opacity 0.5</div>
+    <div class="opa2">Opacity 0.7</div>
+    <div class="opa3">Opacity 0.9</div>
+    <h2>Insert image</h2>
+    <img src="va3.jpg" alt="va3" width="200px" height="50px">
+    <h2>Float properties</h2>
+    <div>
+        <img src="va3.jpg" alt="va3" width="200px" height="50px" class="f1">
+        eSDOGJWEGJSDIEWJGREGNEDGKMESPIGMSDIOHBMWSDMVDSKBNWFJNSGWOENFOUWERERBWOIRNWHERMOVI
+    </div>
+    <div class="clear"></div>
+    <div>
+    <img src="va3.jpg" alt="va3" width="400px" height="100px" class="f2">abcdsadsafwqfcwegwexwexgwhewef
+    </div>
+    <div class="clear"></div>
+    <h2>Nhom cac hinh anh lai voi nhau</h2>
+    <figure>
+        <img src="sen.jpg" alt="hinh1">
+        <img src="sen1.jpg" alt="hinh2">
+        <img src="sen2.jpg" alt="hinh3">
+        <figcaption>Cac nhom hinh</figcaption>
+    </figure>
+    <h2>Thumbnail</h2>
+    <a href="top3.png"><img src="top3_2.png" alt="Hinh nen"></a>
+    <h2>Transition</h2>
+    <div class="transition"></div>
+
+    <h2>Animation</h2>
+    <div class="animation"></div>
+    
+
+</body>
+</html>
